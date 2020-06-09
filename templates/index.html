@@ -1,0 +1,77 @@
+<!--  !   +    TAB      shortcut-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Live Updates
+    </title>
+
+    <style>
+        .cases{
+            color: #800000;
+        }
+
+        .deaths{
+            color: #FF0000;
+        }
+
+        .recovered{
+            color: #008000;
+        }
+
+        h6 {
+            font-weight: lighter;
+        }
+
+        body{
+            font-size: 25px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        h3,h4,h6{
+            position: relative;
+            top:1px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <h1 style="text-align: center;">Corona Daily Updates for Pakistan</h1>
+    <img src="flag.png" alt="Pakistani flag" class= 'center' height="300" width="200">
+    <br>
+    <h3 style="text-align: center;" height='100'>Statistics for Today</h3>
+    <h4 class = 'cases'>
+        New Cases Today: {{today_confirmed}}
+    </h4>
+
+    <h4 class = 'deaths'>
+        New Deaths Today: {{today_deaths}}
+    </h4>
+
+    <h6>
+        Figures for today were updated at: {{today_update_time}}
+    </h6>
+
+    <h3 style="text-align: center;">
+        Total
+    </h3>
+    <h4 class = 'cases'>
+            Total Cases: {{ total_cases }}
+    </h4>
+    <h4 class = 'deaths'>    Total Deaths: {{ total_deaths }}
+    </h4>
+    <h4 class = 'recovered'>    Total Recovered: {{ total_recovered }}
+    </h4>
+    <footer>
+    <h6>current time is {{hours}}:{{minutes}}:{{seconds}} {{country_code}}</h6>
+    </footer>
+</body>
+</html>
