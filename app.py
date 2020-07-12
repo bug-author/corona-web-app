@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    time_url = 'http://api.timezonedb.com/v2.1/get-time-zone?key=BUFVLD01W6M6&format=json&by=zone&zone=Asia/Karachi'
+    time_url = 'http://api.timezonedb.com/v2.1/get-time-zone?key=YOUR_API_KEY&format=json&by=zone&zone=Asia/Karachi'
 
     r = requests.get(time_url)
     response = r.json()
